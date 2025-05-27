@@ -3,11 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #4f46e5; /* indigo-600 */
+  --primary-dark: #4338ca; /* indigo-700 */
+  --secondary: #9333ea; /* purple-600 */
+  --secondary-dark: #7e22ce; /* purple-700 */
+  --accent: #f9fafb; /* gray-50 */
+  --accent-dark: #f3f4f6; /* gray-100 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,11 +24,44 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --accent: #1f2937; /* gray-800 */
+    --accent-dark: #111827; /* gray-900 */
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Custom styles for blog elements */
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.prose blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  color: #4b5563; /* gray-600 */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
