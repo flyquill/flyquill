@@ -43,7 +43,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
-      <Navbar />
       
       {/* Hero Section */}
       <header className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 px-4 sm:px-8 md:px-16">
@@ -186,7 +185,6 @@ export default function Home() {
         </section>
       </main>
 
-      <Footer />
     </div>
   );
 }
