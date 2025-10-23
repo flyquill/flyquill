@@ -32,8 +32,8 @@ export default function Navbar() {
                         <Link href="/" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors">
                             Home
                         </Link>
-                        <Link href="#featured" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors">
-                            Featured
+                        <Link href="/tools" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors">
+                            Tools
                         </Link>
                         <Link href="#categories" className="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors">
                             Categories
@@ -51,6 +51,7 @@ export default function Navbar() {
                         </SignedOut>
                         <SignedIn>
                             <UserButton />
+                            {console.log('hi')}
                         </SignedIn>
                     </div>
 
