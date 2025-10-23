@@ -26,38 +26,38 @@ import '../global.css'
 const projects = [
   {
     id: 1,
-    title: 'Accounting Dashboard',
-    desc: 'Full-stack accounting dashboard with Oracle backend, reports, and automation.',
-    tech: ['React', 'Next.js', 'Oracle', 'cx_Oracle'],
+    title: 'Accounting Software',
+    desc: 'Full-stack accounting software with Oracle forms and reports using PL/SQL.',
+    tech: ['Oracle', 'PL/SQL', 'Oracle Forms', 'Oracle Reports'],
     link: '#',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60'
+    image: '/oracle.png'
   },
   {
     id: 2,
-    title: 'Forms Builder (Oracle-like)',
-    desc: 'Drag-and-drop form builder inspired by Oracle Forms for enterprise workflows.',
-    tech: ['React', 'Tailwind', 'Canvas'],
-    link: '#',
-    image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60'
+    title: 'GTA MOD STATION',
+    desc: 'Created a website in react js for my client who sells GTA mods.',
+    tech: ['Reactjs', 'Bootstrap', 'PHP Backend'],
+    link: 'https://gtamodstation.com/',
+    image: '/gtamodstation.png'
   },
   {
     id: 3,
-    title: 'Automated Video Pipeline',
-    desc: 'n8n + AI pipeline for generating videos, subtitles, and TTS for YouTube Shorts.',
-    tech: ['n8n', 'Node.js', 'AI APIs'],
+    title: 'Internal Website for a company',
+    desc: 'Created a website for internal use of a company and connected with the oracle software',
+    tech: ['PHP', 'MySql', 'Bootstrap', 'Oracle Forms', 'Oracle Reports'],
     link: '#',
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=60'
   }
 ];
 
-const skills = ['Full Stack Web-development', 'Tailwind CSS', 'PHP', 'React.js', 'Next.js', 'Node.js', 'Oracle PL/SQL', 'MYSQL', 'Oracle Forms and Reports', 'DevOps'];
+const skills = ['Full Stack Web-development', 'Tailwind CSS', 'Bootstrap', 'PHP', 'React.js', 'Next.js', 'Node.js', 'Oracle PL/SQL', 'MYSQL', 'Oracle Forms and Reports', 'DevOps'];
 
 export default function PortfolioLanding() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gray-50 text-slate-900">
-      <header className="max-w-6xl mx-auto px-6 py-2 md:py-4 flex items-center justify-between sticky top-0 z-50 bg-gray-50 opacity-90">
+      <header className={`max-w-6xl mx-auto px-6 py-2 md:py-4 flex items-center justify-between sticky top-0 z-50 bg-gray-50 opacity-${menuOpen ? '100' : '90'}`}>
         <div className="flex items-center gap-4">
           <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-blue-500 shadow-sm">
             <Image
@@ -118,7 +118,7 @@ export default function PortfolioLanding() {
               <a onClick={() => setMenuOpen(false)} href="#projects" className="py-2 px-3 rounded hover:bg-slate-50">Projects</a>
               <a onClick={() => setMenuOpen(false)} href="#skills" className="py-2 px-3 rounded hover:bg-slate-50">Skills</a>
               <a onClick={() => setMenuOpen(false)} href="#contact" className="py-2 px-3 rounded hover:bg-slate-50">Contact</a>
-              <a onClick={() => setMenuOpen(false)} href="/resume.pdf" className="py-2 px-3 rounded border inline-flex items-center gap-2"><FileText size={16} /> Resume</a>
+              <a onClick={() => setMenuOpen(false)} href="/resume.pdf" className="py-2 px-3 rounded border inline-flex items-center gap-2"><FileText size={16} />Resume</a>
             </nav>
 
             <div className="mt-6 pt-4 border-t text-sm text-slate-600">
