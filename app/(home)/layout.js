@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 import {
   ClerkProvider,
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <Navbar />
             {children}
+            <Analytics />
           <Footer />
         </body>
       </html>
