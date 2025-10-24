@@ -22,10 +22,9 @@ import {
   BookOpen,
 } from "lucide-react";
 import Image from "next/image";
-import "../global.css";
-import CountUp from "../../components/CountUp";
-import TextType from "../../components/TextType";
-import ContactForm from "../../components/ContactForm";
+import CountUp from "../../_components/CountUp";
+import TextType from "../../_components/TextType";
+import ContactForm from "../../_components/ContactForm";
 
 const projects = [
   {

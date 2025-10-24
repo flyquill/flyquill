@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
+import "./personal.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

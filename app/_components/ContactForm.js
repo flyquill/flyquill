@@ -19,7 +19,7 @@ function ContactForm() {
         />
 
         <label className="text-sm font-medium text-slate-300">Message</label>
-        <textarea name='message' id='message' className="mt-1 block w-full rounded-lg border-slate-700 bg-slate-800 p-3 text-sm focus:border-blue-500 focus:ring-blue-500" rows={3} placeholder="Hi Asad, I want to..." />
+        <textarea name='message' id='message' className="mt-1 block w-full rounded-lg border-slate-700 bg-slate-800 p-3 text-sm focus:border-blue-500 focus:ring-blue-500" rows={3} placeholder="Hi, I want to..." />
         <ValidationError
           prefix="Message"
           field="message"
