@@ -22,6 +22,7 @@ import {
   Book
 } from "lucide-react";
 import ContactForm from "../_components/ContactForm";
+import Link from "next/link";
 
 const services = [
   {
@@ -184,6 +185,9 @@ export default function FlyQuillLanding() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-300">
+          <Link href="/blog" className="hover:text-white">
+            Blog
+          </Link>          
           <a href="#services" className="hover:text-white">
             Services
           </a>
