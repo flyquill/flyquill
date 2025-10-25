@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Sidebar from "../_components/blog/Sidebar";
 import Navbar from "../_components/blog/Navbar";
 import Footer from "../_components/blog/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +25,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white justify-center`}>
+          className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 text-white justify-center`}
+        >
+          <NextTopLoader showSpinner={false} />
           <Navbar />
           <div className="max-w-7xl mx-auto lg:flex gap-8 px-4">
             <main className="flex-1">{children}</main>

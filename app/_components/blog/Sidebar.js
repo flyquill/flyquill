@@ -111,7 +111,7 @@ export default function Sidebar({
           <h4 className="font-semibold">Stay in the loop</h4>
           <p className="text-sm opacity-90 mt-2">Subscribe for weekly updates. No spam, just good posts.</p>
           <div className="mt-3 flex gap-2">
-            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Your email" className="flex-1 px-3 py-2 rounded-md text-black" />
+            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Your email" className="bg-gray-50 flex-1 px-3 py-2 rounded-md text-black" />
             <button onClick={handleSubscribe} className="px-3 py-2 rounded-md bg-white text-indigo-700">Join</button>
           </div>
         </div>

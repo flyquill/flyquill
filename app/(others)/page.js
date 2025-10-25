@@ -167,7 +167,7 @@ export default function FlyQuillLanding() {
     <div className="min-h-screen bg-linear-to-b from-slate-900 via-slate-950 to-black text-slate-100">
       <header className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="relative w-10 h-10 rounded-md overflow-hidden bg-slate-800 border border-slate-700">
+          <div className="relative w-8 h-8 rounded-md overflow-hidden">
             <Image
               src="/logo.png"
               alt="FlyQuill"
@@ -240,7 +240,7 @@ export default function FlyQuillLanding() {
             <div className="p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="relative w-10 h-10 rounded-md overflow-hidden bg-slate-800 border border-slate-700">
+                  <div className="relative w-8 h-8 rounded-md overflow-hidden">
                     <Image
                       src="/logo.png"
                       alt="FlyQuill"
@@ -266,6 +266,13 @@ export default function FlyQuillLanding() {
               </div>
 
               <nav className="mt-6 flex flex-col gap-3">
+                <Link
+                  onClick={() => setMobileNavOpen(false)}
+                  href="/blog"
+                  className="py-3 px-3 rounded hover:bg-slate-800"
+                >
+                  Blog
+                </Link>
                 <a
                   onClick={() => setMobileNavOpen(false)}
                   href="#services"
